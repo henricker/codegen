@@ -2,9 +2,9 @@ export default`
 import ProductRepository from '../repository/productRepository'
 import ProductService from '../service/productService'
 
-export class ProductFactory {
+export default class ProductFactory {
     static getInstance() {
-        const repository = new ProductRepository()
+        const productRepository = new ProductRepository()
         return new ProductService({ repository: productRepository })
     }
 }

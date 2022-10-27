@@ -12,9 +12,9 @@ const template = `
 import $$repositoryName$$ from '../repository/$$repositoryDependency$$'
 import $$serviceName$$ from '../service/$$serviceDependency$$'
 
-export class $$factory$$Factory {
+export default class $$factory$$Factory {
     static getInstance() {
-        const repository = new $$repositoryName$$()
+        const $$repositoryDependency$$ = new $$repositoryName$$()
         return new $$serviceName$$({ repository: $$repositoryDependency$$ })
     }
 }
