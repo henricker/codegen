@@ -12,6 +12,9 @@
 
 - [x] saves files as `camelCase` and classes as `PascalCase`
 
-- [ ] reaches **100% test coverage**
+- [x] reaches **100% test coverage**
 
-- [ ] integration tests should validate files on disk as a valid JS class
+- [x] integration tests should validate files on disk as a valid JS class
+
+# Coverage 100% :D
+![coverage](./docs/coverage.png)
