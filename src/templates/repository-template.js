@@ -1,4 +1,4 @@
-import { StringReplacer } from "../utils/string-replace"
+import { StringReplacer } from "../utils/string-replace.js"
 
 const componentNameAnchor = '$$componentName$$'
 const template = `

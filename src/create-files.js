@@ -1,5 +1,5 @@
-import { StringReplacer } from './utils/string-replace';
-import templates from './templates'
+import { StringReplacer } from './utils/string-replace.js';
+import templates from './templates/index.js'
 import path from 'path';
 import fsPromises from 'fs/promises';
 
@@ -35,7 +35,6 @@ export async function createFiles({ mainPath, layersDir, layers, componentName }
                 error: 'Layer doesnt exists'
             }
         }
-
         const { filename, template } = templates[choosenTemplate](componentName, ...dependenciesByLayer(layer, componentName))
         const filePath = path.join(targetPath, layer, `${filename}.js`)
         pendingCreateFiles.push({ filePath, template })

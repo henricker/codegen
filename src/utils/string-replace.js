@@ -2,7 +2,7 @@
 export class StringReplacer {
     
     static #transform(str, isUpperCase = true) {
-        if (str.length === 0) return ''
+        if (str?.length === 0) return ''
         const [firstLetter, ...rest] = str;
         const newFirstLetter = isUpperCase ? firstLetter.toUpperCase() : firstLetter.toLowerCase();
 
