@@ -12,7 +12,7 @@ function layers(layer) {
     }[layer]
 }
 
-describe('#Layers - create', () => {
+describe('#Files - create', () => {
     const layersDir = 'src'
     const mainPath = './'
 
