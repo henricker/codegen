@@ -8,7 +8,7 @@
 
 - [x] creates `factory` layer with `service` and `repository` returning its instances
 
-- [ ] can create multiples domains with a single comand
+- [x] can create multiples domains with a single comand
 
 - [x] saves files as `camelCase` and classes as `PascalCase`
 
